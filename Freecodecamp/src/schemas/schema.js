@@ -36,6 +36,10 @@ export const typeDefs = `#graphql
     updateGame(id: ID!, edits: EditGameInput!): Game
   }
 
+  type Subscription {
+    gameCreated: Game
+  }
+
   input AddGameInput {
     title: String!
     plataform: [String!]!

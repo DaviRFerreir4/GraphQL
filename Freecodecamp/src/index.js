@@ -85,6 +85,11 @@ const resolvers = {
       })
     },
   },
+  Subscription: {
+    gameCreated(_, args) {
+      return db.games
+    },
+  },
 }
 
 const PORT = 4000
